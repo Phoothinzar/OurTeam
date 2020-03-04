@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/photo1"
+        app:layout_constraintHorizontal_weight="4"
+       app:layout_constraintHorizontal_chainStyle="spread"
+        android:layout_marginTop="100dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/adam"
+        app:layout_constraintRight_toLeftOf="@id/photo2"
+       app:layout_constraintBottom_toBottomOf="@id/photo2"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+    <TextView
+        android:id="@+id/phototext1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\t\t\tAdam\nExecutive Officer"
+       app:layout_constraintRight_toLeftOf="@id/phototext2"
+        app:layout_constraintTop_toBottomOf="@id/photo1"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/photo2"
+        app:layout_constraintHorizontal_weight="3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/bteeyl"
+        app:layout_constraintBottom_toBottomOf="@id/photo1"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="100dp"
+        app:layout_constraintLeft_toRightOf="@id/photo1"
+        app:layout_constraintRight_toLeftOf="@id/photo3" />
+    <TextView
+        android:id="@+id/phototext2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bteey L\nMarketing"
+android:layout_marginRight="12dp"        app:layout_constraintRight_toLeftOf="@id/photo3"
+        app:layout_constraintLeft_toRightOf="@id/phototext1"
+        app:layout_constraintTop_toBottomOf="@id/photo2"
+   />
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/photo3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/robert"
+        app:layout_constraintHorizontal_weight="3"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/photo2"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="100dp"/>
+    <TextView
+        android:id="@+id/phototext3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\t\tRoberts\nBusiness Analyst"
+        app:layout_constraintLeft_toRightOf="@id/photo2"
+        app:layout_constraintTop_toBottomOf="@id/photo3"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <ImageButton
+       android:id="@+id/menubutton"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:src="@drawable/ic_menu_black_24dp"
+       app:layout_constraintLeft_toLeftOf="parent"
+       app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageButton
+        android:id="@+id/morebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_more_vert_black_24dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Our Team"
+        android:textSize="30dp"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintBottom_toTopOf="@id/photo2"
+        app:layout_constraintTop_toBottomOf="@id/menubutton"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+        android:id="@+id/mission"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mission"
+        android:layout_marginTop="50dp"
+        app:layout_constraintTop_toBottomOf="@id/phototext6"
+
+        android:textColor="@color/colorPrimaryDark"
+
+        android:textSize="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+    <TextView
+        android:id="@+id/body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" \t\t\t\tOur mission is to enhancing bussiness growth of our customer with creative Design and Development to deliver market-defining high-quility solutions that create value and reliable competitive advantage for our client around the world.\n  \t\t\tOur mission is to deliver optimal solution with quility and serveices at responsible prices."
+        android:textSize="15dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintTop_toBottomOf="@id/mission"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/photo4"
+        android:layout_width="50dp"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintHorizontal_weight="3"
+        android:layout_height="50dp"
+        android:src="@drawable/miller"
+        app:layout_constraintTop_toBottomOf="@id/phototext1"
+        app:layout_constraintRight_toLeftOf="@id/photo5"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/photo5"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/kelvin"
+        app:layout_constraintHorizontal_weight="3"
+        app:layout_constraintTop_toBottomOf="@id/phototext2"
+        app:layout_constraintLeft_toRightOf="@id/photo4"
+app:layout_constraintBottom_toBottomOf="@id/photo4"
+        app:layout_constraintRight_toLeftOf="@id/photo6"/>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/photo6"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintHorizontal_weight="4"
+        android:src="@drawable/laura"
+        app:layout_constraintBottom_toBottomOf="@id/photo5"
+        app:layout_constraintTop_toBottomOf="@id/phototext2"
+        app:layout_constraintLeft_toRightOf="@id/photo5"
+        app:layout_constraintRight_toRightOf="parent"/>
+    <TextView
+        android:id="@+id/phototext5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/photo5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/phototext6"
+        android:text="\tMiller W\nUX Designer"/>
+    <TextView
+        android:id="@+id/phototext6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\tKevin John\n\t\tWeb Dev"
+        app:layout_constraintRight_toLeftOf="@id/phototext7"
+        app:layout_constraintLeft_toRightOf="@id/phototext5"
+        app:layout_constraintBottom_toBottomOf="@id/phototext5"/>
+    <TextView
+        android:id="@+id/phototext7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\tLaura M\nMobile Dev"
+        app:layout_constraintTop_toBottomOf="@id/photo6"
+        app:layout_constraintLeft_toRightOf="@id/phototext6"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>
